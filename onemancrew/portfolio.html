@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — ONEMANCREW</title>
+  <meta name="description" content="Bekijk bedrijfsfilms, content packages en groeimedia gemaakt door ONEMANCREW." />
+
+  <meta property="og:title" content="Portfolio — ONEMANCREW" />
+  <meta property="og:description" content="Recente producties van ONEMANCREW." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="logo/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <a class="sr-only" href="#main">Ga naar inhoud</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="ONEMANCREW, terug naar home">
+        <img src="logo/logo.png" alt="" onerror="this.style.display='none'" />
+        ONEMANCREW
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="index.html" data-nav>Home</a></li>
+          <li><a href="diensten.html" data-nav>Diensten</a></li>
+          <li><a href="portfolio.html" data-nav>Portfolio</a></li>
+          <li><a href="over.html" data-nav>Over</a></li>
+          <li><a href="contact.html" data-nav>Contact</a></li>
+          <li class="nav-cta-mobile"><a href="contact.html" class="btn btn-accent btn-sm">Offerte aanvragen</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-accent btn-sm nav-cta">Offerte aanvragen</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow reveal">Portfolio</p>
+        <h1 class="reveal" data-reveal-delay="0.08">Werk dat groei laat zien</h1>
+        <p class="reveal" data-reveal-delay="0.16">Een selectie van bedrijfsfilms, content packages en groeimedia. <!-- TODO: vervangen door echte projecten --></p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:clamp(3rem,6vw,4.5rem);">
+      <div class="container">
+
+        <div class="filter-bar reveal">
+          <button class="tag is-active" data-filter="all">Alles</button>
+          <button class="tag" data-filter="bedrijfsfilm">Bedrijfsfilms</button>
+          <button class="tag" data-filter="content-package">Content Packages</button>
+          <button class="tag" data-filter="groeimedia">Groeimedia</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- TODO: vervangen door echte portfolio thumbnails en video's -->
+          <div class="portfolio-card reveal" data-reveal-group="grid" data-category="bedrijfsfilm" data-lightbox-src="assets/video/work-01.mp4">
+            <img src="assets/img/work-01.jpg" alt="Bedrijfsfilm voor een logistiek bedrijf" loading="lazy" />
+            <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+            <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Bedrijfsfilm</span><h3 style="font-size:1.1rem;">Logistiek op snelheid</h3></div>
+          </div>
+
+          <div class="portfolio-card reveal" data-reveal-group="grid" data-category="content-package" data-lightbox-src="assets/video/work-02.mp4">
+            <img src="assets/img/work-02.jpg" alt="Content package voor een softwarebedrijf" loading="lazy" />
+            <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+            <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Content Package</span><h3 style="font-size:1.1rem;">Maandelijkse groei in beeld</h3></div>
+          </div>
+
+          <div class="portfolio-card reveal" data-reveal-group="grid" data-category="groeimedia" data-lightbox-src="assets/video/work-03.mp4">
+            <img src="assets/img/work-03.jpg" alt="Recruitmentvideo voor een productiebedrijf" loading="lazy" />
+            <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+            <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Recruitment</span><h3 style="font-size:1.1rem;">Nieuwe collega's vinden</h3></div>
+          </div>
+
+          <div class="portfolio-card reveal" data-reveal-group="grid" data-category="bedrijfsfilm" data-lightbox-src="assets/video/work-04.mp4">
+            <img src="assets/img/work-04.jpg" alt="Bedrijfsfilm voor een productiebedrijf" loading="lazy" />
+            <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+            <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Bedrijfsfilm</span><h3 style="font-size:1.1rem;">Het verhaal achter het merk</h3></div>
+          </div>
+
+          <div class="portfolio-card reveal" data-reveal-group="grid" data-category="groeimedia" data-lightbox-src="assets/video/work-05.mp4">
+            <img src="assets/img/work-05.jpg" alt="Productvideo voor een D2C merk" loading="lazy" />
+            <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+            <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Productvideo</span><h3 style="font-size:1.1rem;">Van schap naar scherm</h3></div>
+          </div>
+
+          <div class="portfolio-card reveal" data-reveal-group="grid" data-category="content-package" data-lightbox-src="assets/video/work-06.mp4">
+            <img src="assets/img/work-06.jpg" alt="Social content serie voor een dienstverlener" loading="lazy" />
+            <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+            <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Social Content</span><h3 style="font-size:1.1rem;">Wekelijks in beeld</h3></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <p class="eyebrow reveal" style="justify-content:center;">Jouw merk hierna</p>
+        <h2 class="reveal" data-reveal-delay="0.08">Klaar om je eigen verhaal vast te leggen?</h2>
+        <div class="cta-actions reveal" data-reveal-delay="0.16">
+          <a href="contact.html" class="btn btn-accent magnetic">Offerte aanvragen</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Video speler">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Sluit video"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <video controls playsinline>
+        <source src="" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand reveal">
+        <a href="index.html" class="logo">
+          <img src="logo/logo.png" alt="" onerror="this.style.display='none'" />
+          ONEMANCREW
+        </a>
+        <p>Bedrijfsfilms en content packages die het verhaal van je merk omzetten in bereik, vertrouwen en omzet.</p>
+      </div>
+
+      <div class="footer-col reveal" data-reveal-group="footer">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="over.html">Over</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col reveal" data-reveal-group="footer">
+        <h4>Diensten</h4>
+        <ul>
+          <li><a href="diensten.html#bedrijfsfilms">Bedrijfsfilms</a></li>
+          <li><a href="diensten.html#content-packages">Content Packages</a></li>
+          <li><a href="diensten.html#groeimedia">Groeimedia</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col reveal" data-reveal-group="footer">
+        <h4>Contact</h4>
+        <address>
+          <!-- TODO: vervangen door echte contactgegevens -->
+          <a href="mailto:info@onemancrew.nl">info@onemancrew.nl</a>
+          <a href="tel:+31600000000">+31 6 00 00 00 00</a>
+          <span>Nederland, op aanvraag internationaal</span>
+        </address>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> ONEMANCREW. Alle rechten voorbehouden.</p>
+      <p>Eén persoon. Een hele crew.</p>
+    </div>
+  </footer>
+
+  <script src="js/reveal.js"></script>
+  <script src="js/counters.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

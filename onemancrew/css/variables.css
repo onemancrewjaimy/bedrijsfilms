@@ -1,0 +1,29 @@
+:root {
+  /* achtergronden */
+  --bg-900: #141414;
+  --bg-800: #1a1a1a;
+  --bg-700: #202020;
+  --bg-600: #2a2a2a;
+  --line: #333333;
+
+  /* tekst */
+  --white: #ffffff;
+  --grey-300: #b3b3b3;
+  --grey-500: #777777;
+
+  /* accent */
+  --accent: #d07335;
+  --accent-bright: #e88c4d;
+  --accent-dim: rgba(208, 115, 53, 0.12);
+
+  /* vorm */
+  --radius: 14px;
+  --radius-lg: 22px;
+  --maxw: 1280px;
+
+  /* timing */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --fast: 0.2s;
+  --med: 0.4s;
+  --slow: 0.7s;
+}

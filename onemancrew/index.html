@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONEMANCREW — Video als groeimotor voor je bedrijf</title>
+  <meta name="description" content="ONEMANCREW maakt bedrijfsfilms en content packages die het verhaal van je merk omzetten in bereik, vertrouwen en omzet. Eén persoon. Een hele crew." />
+
+  <meta property="og:title" content="ONEMANCREW — Video als groeimotor voor je bedrijf" />
+  <meta property="og:description" content="Bedrijfsfilms en content packages die bijdragen aan de groei van je onderneming." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-cover.jpg" />
+
+  <link rel="icon" type="image/png" href="logo/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <a class="sr-only" href="#main">Ga naar inhoud</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="ONEMANCREW, terug naar home">
+        <img src="logo/logo.png" alt="" onerror="this.style.display='none'" />
+        ONEMANCREW
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="index.html" data-nav class="is-active">Home</a></li>
+          <li><a href="diensten.html" data-nav>Diensten</a></li>
+          <li><a href="portfolio.html" data-nav>Portfolio</a></li>
+          <li><a href="over.html" data-nav>Over</a></li>
+          <li><a href="contact.html" data-nav>Contact</a></li>
+          <li class="nav-cta-mobile"><a href="contact.html" class="btn btn-accent btn-sm">Offerte aanvragen</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-accent btn-sm nav-cta">Offerte aanvragen</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-media">
+        <!-- TODO: vervangen door echte showreel video (mp4, ~10-20s loop) -->
+        <video autoplay muted loop playsinline poster="assets/img/hero-poster.jpg">
+          <source src="assets/video/hero-reel.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow reveal">Videoproductie voor groeiende bedrijven</p>
+        <h1 class="reveal" data-reveal-delay="0.08">Wij maken geen video's.<br />Wij bouwen <span class="text-accent">groei.</span></h1>
+        <p class="lead reveal" data-reveal-delay="0.16" style="margin-top:1.4rem; max-width:560px;">
+          ONEMANCREW vertaalt het verhaal van je bedrijf naar beelden die bereik, vertrouwen en omzet opleveren. Eén crew, volledige controle, geen ruis.
+        </p>
+        <div class="hero-actions reveal" data-reveal-delay="0.24">
+          <a href="portfolio.html" class="btn btn-accent magnetic">Bekijk werk</a>
+          <a href="contact.html" class="btn btn-ghost magnetic">Offerte aanvragen</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="line"><span></span></div>
+      </div>
+    </section>
+
+    <!-- WAT IK DOE -->
+    <section class="section" id="diensten">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow" style="justify-content:center;">Wat ik doe</p>
+          <h2>Drie manieren om te groeien met video</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="card reveal" data-reveal-group="services">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/><path d="m17 9 4-2v10l-4-2"/></svg>
+            </div>
+            <h3>Bedrijfsfilms</h3>
+            <p>Eén film die laat zien wie je bent, wat je maakt en waarom dat ertoe doet. Voor je website, je sales-gesprekken en je nieuwe medewerkers.</p>
+            <a href="diensten.html#bedrijfsfilms" class="card-link">Meer over bedrijfsfilms <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <article class="card reveal" data-reveal-group="services">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3>Content Packages</h3>
+            <p>Doorlopende content op maat. Maandelijks vers materiaal voor social en campagnes, zodat je merk zichtbaar blijft zonder dat je er zelf achteraan moet.</p>
+            <a href="diensten.html#content-packages" class="card-link">Meer over content packages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <article class="card reveal" data-reveal-group="services">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17v-2a4 4 0 0 1 4-4h2M3 17h18M14 17v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6"/></svg>
+            </div>
+            <h3>Groeimedia</h3>
+            <p>Media die direct bijdraagt aan de groei van je onderneming. Strategisch ingezet op de plekken waar je doelgroep daadwerkelijk kijkt en beslist.</p>
+            <a href="diensten.html#groeimedia" class="card-link">Meer over groeimedia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAAROM VIDEO: CIJFERS + GRAFIEK -->
+    <section class="section stats-section">
+      <div class="container">
+        <div class="stats-layout">
+          <div>
+            <div class="section-head reveal" style="margin-bottom:0;">
+              <p class="eyebrow">Waarom video</p>
+              <h2>Video is geen kostenpost. Het is je groeimotor.</h2>
+              <p style="margin-top:1.2rem;">Bedrijven die structureel investeren in video bouwen sneller vertrouwen op, bereiken meer van hun doelgroep en zetten dat bereik om in omzet. <!-- TODO: vervangen door eigen onderbouwing of klantresultaten --></p>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat reveal" data-reveal-group="stats">
+                <span class="stat-number"><span data-count-to="74" data-count-suffix="%">0%</span></span>
+                <span class="stat-label">Meer bereik na 6 maanden video<br /><!-- TODO: vervangen --></span>
+              </div>
+              <div class="stat reveal" data-reveal-group="stats">
+                <span class="stat-number"><span data-count-to="3.2" data-count-decimals="1" data-count-suffix="x">0x</span></span>
+                <span class="stat-label">Hogere conversie met video op landingspagina's<!-- TODO: vervangen --></span>
+              </div>
+              <div class="stat reveal" data-reveal-group="stats">
+                <span class="stat-number"><span data-count-to="120" data-count-suffix="+">0+</span></span>
+                <span class="stat-label">Producties opgeleverd<!-- TODO: vervangen --></span>
+              </div>
+              <div class="stat reveal" data-reveal-group="stats">
+                <span class="stat-number"><span data-count-to="100" data-count-suffix="%">0%</span></span>
+                <span class="stat-label">Levering op of voor deadline</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-card chart-animate reveal reveal-right">
+            <div class="chart-card-head">
+              <div>
+                <h3 style="font-size:1.1rem; margin-bottom:0.3rem;">Bereik na een content package</h3>
+                <p style="font-size:0.85rem;">Indicatieve groeicurve over 6 maanden<!-- TODO: vervangen door echte data --></p>
+              </div>
+              <div class="chart-legend">
+                <span><span class="dot"></span> Bereik</span>
+              </div>
+            </div>
+
+            <svg viewBox="0 0 560 280" width="100%" role="img" aria-label="Lijngrafiek die de stijging van bereik over zes maanden toont">
+              <defs>
+                <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#d07335" stop-opacity="0.45" />
+                  <stop offset="100%" stop-color="#d07335" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+
+              <line class="chart-grid-line" x1="0" y1="40" x2="560" y2="40" />
+              <line class="chart-grid-line" x1="0" y1="110" x2="560" y2="110" />
+              <line class="chart-grid-line" x1="0" y1="180" x2="560" y2="180" />
+              <line class="chart-grid-line" x1="0" y1="250" x2="560" y2="250" />
+
+              <path class="chart-area-path" d="M0,230 L90,210 L180,195 L270,160 L360,120 L450,80 L540,30 L540,250 L0,250 Z" />
+              <path class="chart-line-path" d="M0,230 L90,210 L180,195 L270,160 L360,120 L450,80 L540,30" />
+
+              <circle class="chart-point" cx="0" cy="230" r="5" />
+              <circle class="chart-point" cx="90" cy="210" r="5" />
+              <circle class="chart-point" cx="180" cy="195" r="5" />
+              <circle class="chart-point" cx="270" cy="160" r="5" />
+              <circle class="chart-point" cx="360" cy="120" r="5" />
+              <circle class="chart-point" cx="450" cy="80" r="5" />
+              <circle class="chart-point" cx="540" cy="30" r="5" />
+
+              <text class="chart-axis-label" x="0" y="270">Mnd 1</text>
+              <text class="chart-axis-label" x="250" y="270">Mnd 4</text>
+              <text class="chart-axis-label" x="510" y="270">Mnd 6</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UITGELICHT WERK -->
+    <section class="section" id="werk">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Uitgelicht werk</p>
+          <h2>Recente producties</h2>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- TODO: vervangen door echte portfolio thumbnails en video's -->
+          <div class="portfolio-card reveal" data-reveal-group="work" data-lightbox-src="assets/video/work-01.mp4">
+            <img src="assets/img/work-01.jpg" alt="Bedrijfsfilm voor een logistiek bedrijf" loading="lazy" />
+            <button class="play-btn" aria-label="Speel video af">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+            </button>
+            <div class="portfolio-card-overlay">
+              <span class="portfolio-card-tag">Bedrijfsfilm</span>
+              <h3 style="font-size:1.15rem;">Logistiek op snelheid</h3>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal" data-reveal-group="work" data-lightbox-src="assets/video/work-02.mp4">
+            <img src="assets/img/work-02.jpg" alt="Content package voor een softwarebedrijf" loading="lazy" />
+            <button class="play-btn" aria-label="Speel video af">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+            </button>
+            <div class="portfolio-card-overlay">
+              <span class="portfolio-card-tag">Content Package</span>
+              <h3 style="font-size:1.15rem;">Maandelijkse groei in beeld</h3>
+            </div>
+          </div>
+
+          <div class="portfolio-card reveal" data-reveal-group="work" data-lightbox-src="assets/video/work-03.mp4">
+            <img src="assets/img/work-03.jpg" alt="Recruitmentvideo voor een productiebedrijf" loading="lazy" />
+            <button class="play-btn" aria-label="Speel video af">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+            </button>
+            <div class="portfolio-card-overlay">
+              <span class="portfolio-card-tag">Recruitment</span>
+              <h3 style="font-size:1.15rem;">Nieuwe collega's vinden</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-foot reveal">
+          <a href="portfolio.html" class="btn btn-ghost magnetic">Bekijk volledig portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCES -->
+    <section class="section process-section" style="background:var(--bg-800); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow" style="justify-content:center;">Werkwijze</p>
+          <h2>Van eerste gesprek tot eindproduct</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-track">
+            <div class="timeline-fill"></div>
+          </div>
+          <div class="timeline-steps">
+            <div class="timeline-step">
+              <span class="timeline-dot"></span>
+              <h3>Intake</h3>
+              <p>We bespreken je doel, je doelgroep en wat groei voor jouw bedrijf betekent.</p>
+            </div>
+            <div class="timeline-step">
+              <span class="timeline-dot"></span>
+              <h3>Concept</h3>
+              <p>Ik vertaal het gesprek naar een scherp concept en een concrete aanpak.</p>
+            </div>
+            <div class="timeline-step">
+              <span class="timeline-dot"></span>
+              <h3>Filmdag</h3>
+              <p>Opname op locatie met professionele cinema-apparatuur, strak en efficiënt.</p>
+            </div>
+            <div class="timeline-step">
+              <span class="timeline-dot"></span>
+              <h3>Post-productie</h3>
+              <p>Montage, colourgrade en geluid, allemaal door één hand voor een consistent resultaat.</p>
+            </div>
+            <div class="timeline-step">
+              <span class="timeline-dot"></span>
+              <h3>Oplevering</h3>
+              <p>Eindproduct in de juiste formaten, op tijd, klaar om in te zetten.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow" style="justify-content:center;">Wat klanten zeggen</p>
+          <h2>Vertrouwen van bedrijven die groeiden</h2>
+        </div>
+
+        <div class="testimonial-slider reveal" data-testimonial-slider>
+          <div class="testimonial-track">
+            <!-- TODO: vervangen door echte klantreviews -->
+            <article class="testimonial-card is-active">
+              <svg class="testimonial-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6C4.87 8.06 3.5 10.7 3.5 13.5c0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25S9.19 16 8.5 16a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Zm9.5 0c-2.3 2.06-3.67 4.7-3.67 7.5 0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Z"/></svg>
+              <p class="testimonial-text">ONEMANCREW snapte direct waar ons verhaal om draaide. Geen lange briefings nodig, gewoon een scherpe film die precies klopte met hoe we gezien willen worden.</p>
+              <div class="testimonial-author">
+                <img src="assets/img/client-01.jpg" alt="" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <strong>Mark Hendriks</strong>
+                  <span>Directeur, Havenwerk B.V.</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <svg class="testimonial-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6C4.87 8.06 3.5 10.7 3.5 13.5c0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25S9.19 16 8.5 16a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Zm9.5 0c-2.3 2.06-3.67 4.7-3.67 7.5 0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Z"/></svg>
+              <p class="testimonial-text">Geen accountmanager, geen ruis, gewoon rechtstreeks contact met de persoon die ook filmt. Dat tempo en die duidelijkheid hadden we nog niet eerder meegemaakt.</p>
+              <div class="testimonial-author">
+                <img src="assets/img/client-02.jpg" alt="" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <strong>Sanne de Groot</strong>
+                  <span>Marketing Lead, Stroom B.V.</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <svg class="testimonial-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6C4.87 8.06 3.5 10.7 3.5 13.5c0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25S9.19 16 8.5 16a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Zm9.5 0c-2.3 2.06-3.67 4.7-3.67 7.5 0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Z"/></svg>
+              <p class="testimonial-text">De content packages houden onze social kanalen al maanden levend zonder dat wij er zelf nog naar hoeven om te kijken. Precies de groeimotor die we zochten.</p>
+              <div class="testimonial-author">
+                <img src="assets/img/client-03.jpg" alt="" class="testimonial-avatar" loading="lazy" />
+                <div>
+                  <strong>Tom Visser</strong>
+                  <span>Eigenaar, Kantor Groep</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="testimonial-controls">
+            <button class="testimonial-arrow" data-testimonial-dir="-1" aria-label="Vorige review">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg>
+            </button>
+            <div class="testimonial-dots" data-testimonial-dots></div>
+            <button class="testimonial-arrow" data-testimonial-dir="1" aria-label="Volgende review">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERTROUWEN -->
+    <section class="logos-section" aria-label="Bedrijven die met ONEMANCREW werkten">
+      <div class="container">
+        <p class="eyebrow center reveal" style="justify-content:center; margin-bottom:2.2rem;">Vertrouwd door groeiende bedrijven</p>
+        <div class="logos-grid reveal" data-reveal-group="logos">
+          <!-- TODO: vervangen door echte klantnamen of logo's -->
+          <span class="logo-item">NOVARA</span>
+          <span class="logo-item">BRIGHTPATH</span>
+          <span class="logo-item">KANTOR&nbsp;GROEP</span>
+          <span class="logo-item">VELDIS</span>
+          <span class="logo-item">HAVENWERK</span>
+          <span class="logo-item">STROOM&nbsp;B.V.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <p class="eyebrow reveal" style="justify-content:center;">Klaar om te groeien</p>
+        <h2 class="reveal" data-reveal-delay="0.08">Laten we het verhaal van je bedrijf vertalen naar groei.</h2>
+        <div class="cta-actions reveal" data-reveal-delay="0.16">
+          <a href="contact.html" class="btn btn-accent magnetic">Offerte aanvragen</a>
+          <a href="portfolio.html" class="btn btn-ghost magnetic">Bekijk werk</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand reveal">
+        <a href="index.html" class="logo">
+          <img src="logo/logo.png" alt="" onerror="this.style.display='none'" />
+          ONEMANCREW
+        </a>
+        <p>Bedrijfsfilms en content packages die het verhaal van je merk omzetten in bereik, vertrouwen en omzet.</p>
+      </div>
+
+      <div class="footer-col reveal" data-reveal-group="footer">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="over.html">Over</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col reveal" data-reveal-group="footer">
+        <h4>Diensten</h4>
+        <ul>
+          <li><a href="diensten.html#bedrijfsfilms">Bedrijfsfilms</a></li>
+          <li><a href="diensten.html#content-packages">Content Packages</a></li>
+          <li><a href="diensten.html#groeimedia">Groeimedia</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col reveal" data-reveal-group="footer">
+        <h4>Contact</h4>
+        <address>
+          <!-- TODO: vervangen door echte contactgegevens -->
+          <a href="mailto:info@onemancrew.nl">info@onemancrew.nl</a>
+          <a href="tel:+31600000000">+31 6 00 00 00 00</a>
+          <span>Nederland, op aanvraag internationaal</span>
+        </address>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> ONEMANCREW. Alle rechten voorbehouden.</p>
+      <p>Eén persoon. Een hele crew.</p>
+    </div>
+  </footer>
+
+  <script src="js/reveal.js"></script>
+  <script src="js/counters.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

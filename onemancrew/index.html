@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ONEMANCREW — Video als groeimotor voor je bedrijf</title>
-  <meta name="description" content="ONEMANCREW maakt bedrijfsfilms en content packages die het verhaal van je merk omzetten in bereik, vertrouwen en omzet. Eén persoon. Een hele crew." />
+  <title>JOUWBEDRIJFSFILM — Video als groeimotor voor je bedrijf</title>
+  <meta name="description" content="JOUWBEDRIJFSFILM maakt bedrijfsfilms en content packages die het verhaal van je merk omzetten in bereik, vertrouwen en omzet. Powered by onemancrew." />
 
-  <meta property="og:title" content="ONEMANCREW — Video als groeimotor voor je bedrijf" />
+  <meta property="og:title" content="JOUWBEDRIJFSFILM — Video als groeimotor voor je bedrijf" />
   <meta property="og:description" content="Bedrijfsfilms en content packages die bijdragen aan de groei van je onderneming." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/img/og-cover.jpg" />
@@ -15,7 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Mono:wght@400;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
@@ -30,9 +30,9 @@
 
   <header class="site-header" id="siteHeader">
     <div class="container nav-inner">
-      <a href="index.html" class="logo" aria-label="ONEMANCREW, terug naar home">
+      <a href="index.html" class="logo" aria-label="JOUWBEDRIJFSFILM, terug naar home">
         <img src="logo/logo.png" alt="" onerror="this.style.display='none'" />
-        ONEMANCREW
+        <span class="logo-text">JOUWBEDRIJFSFILM<span class="logo-sub">Powered by onemancrew</span></span>
       </a>
 
       <nav class="main-nav" id="mainNav" aria-label="Hoofdnavigatie">
@@ -47,6 +47,7 @@
       </nav>
 
       <div class="nav-actions">
+        <div class="rec"><span class="rec-dot"></span><span id="tc">00:00:00:00</span></div>
         <a href="contact.html" class="btn btn-accent btn-sm nav-cta">Offerte aanvragen</a>
         <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
           <span></span><span></span><span></span>
@@ -59,24 +60,26 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-media">
+      <div class="hero-media" id="heroMedia">
         <!-- TODO: vervangen door echte showreel video (mp4, ~10-20s loop) -->
-        <video autoplay muted loop playsinline poster="assets/img/hero-poster.jpg">
+        <video autoplay muted loop playsinline poster="assets/img/hero-poster.jpg" onerror="this.closest('.hero-media').classList.add('is-empty')">
           <source src="assets/video/hero-reel.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="hero-overlay"></div>
+      <div class="hero-frame" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
 
       <div class="container hero-content">
         <p class="eyebrow reveal">Videoproductie voor groeiende bedrijven</p>
         <h1 class="reveal" data-reveal-delay="0.08">Wij maken geen video's.<br />Wij bouwen <span class="text-accent">groei.</span></h1>
         <p class="lead reveal" data-reveal-delay="0.16" style="margin-top:1.4rem; max-width:560px;">
-          ONEMANCREW vertaalt het verhaal van je bedrijf naar beelden die bereik, vertrouwen en omzet opleveren. Eén crew, volledige controle, geen ruis.
+          JOUWBEDRIJFSFILM vertaalt het verhaal van je bedrijf naar beelden die bereik, vertrouwen en omzet opleveren. Eén crew, volledige controle, geen ruis.
         </p>
         <div class="hero-actions reveal" data-reveal-delay="0.24">
           <a href="portfolio.html" class="btn btn-accent magnetic">Bekijk werk</a>
           <a href="contact.html" class="btn btn-ghost magnetic">Offerte aanvragen</a>
         </div>
+        <p class="manifesto reveal" data-reveal-delay="0.32">Geen storyboard-vergaderingen. Geen accountmanager als tussenpersoon. Eén vakman die filmt, monteert en grade — van eerste schot tot eindlevering.<span class="sig">— Jaimy, onemancrew</span></p>
       </div>
 
       <div class="scroll-indicator" aria-hidden="true">
@@ -94,7 +97,7 @@
         </div>
 
         <div class="services-grid">
-          <article class="card reveal" data-reveal-group="services">
+          <article class="card reveal" data-reveal-group="services" data-idx="01">
             <div class="card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/><path d="m17 9 4-2v10l-4-2"/></svg>
             </div>
@@ -103,7 +106,7 @@
             <a href="diensten.html#bedrijfsfilms" class="card-link">Meer over bedrijfsfilms <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </article>
 
-          <article class="card reveal" data-reveal-group="services">
+          <article class="card reveal" data-reveal-group="services" data-idx="02">
             <div class="card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
             </div>
@@ -112,7 +115,7 @@
             <a href="diensten.html#content-packages" class="card-link">Meer over content packages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </article>
 
-          <article class="card reveal" data-reveal-group="services">
+          <article class="card reveal" data-reveal-group="services" data-idx="03">
             <div class="card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17v-2a4 4 0 0 1 4-4h2M3 17h18M14 17v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6"/></svg>
             </div>
@@ -210,7 +213,7 @@
         <div class="portfolio-grid">
           <!-- TODO: vervangen door echte portfolio thumbnails en video's -->
           <div class="portfolio-card reveal" data-reveal-group="work" data-lightbox-src="assets/video/work-01.mp4">
-            <img src="assets/img/work-01.jpg" alt="Bedrijfsfilm voor een logistiek bedrijf" loading="lazy" />
+            <img src="assets/img/work-01.jpg" alt="Bedrijfsfilm voor een logistiek bedrijf" loading="lazy" onerror="this.closest('.portfolio-card').classList.add('is-empty')" />
             <button class="play-btn" aria-label="Speel video af">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
             </button>
@@ -221,7 +224,7 @@
           </div>
 
           <div class="portfolio-card reveal" data-reveal-group="work" data-lightbox-src="assets/video/work-02.mp4">
-            <img src="assets/img/work-02.jpg" alt="Content package voor een softwarebedrijf" loading="lazy" />
+            <img src="assets/img/work-02.jpg" alt="Content package voor een softwarebedrijf" loading="lazy" onerror="this.closest('.portfolio-card').classList.add('is-empty')" />
             <button class="play-btn" aria-label="Speel video af">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
             </button>
@@ -232,7 +235,7 @@
           </div>
 
           <div class="portfolio-card reveal" data-reveal-group="work" data-lightbox-src="assets/video/work-03.mp4">
-            <img src="assets/img/work-03.jpg" alt="Recruitmentvideo voor een productiebedrijf" loading="lazy" />
+            <img src="assets/img/work-03.jpg" alt="Recruitmentvideo voor een productiebedrijf" loading="lazy" onerror="this.closest('.portfolio-card').classList.add('is-empty')" />
             <button class="play-btn" aria-label="Speel video af">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
             </button>
@@ -305,9 +308,9 @@
             <!-- TODO: vervangen door echte klantreviews -->
             <article class="testimonial-card is-active">
               <svg class="testimonial-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6C4.87 8.06 3.5 10.7 3.5 13.5c0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25S9.19 16 8.5 16a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Zm9.5 0c-2.3 2.06-3.67 4.7-3.67 7.5 0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Z"/></svg>
-              <p class="testimonial-text">ONEMANCREW snapte direct waar ons verhaal om draaide. Geen lange briefings nodig, gewoon een scherpe film die precies klopte met hoe we gezien willen worden.</p>
+              <p class="testimonial-text">JOUWBEDRIJFSFILM snapte direct waar ons verhaal om draaide. Geen lange briefings nodig, gewoon een scherpe film die precies klopte met hoe we gezien willen worden.</p>
               <div class="testimonial-author">
-                <img src="assets/img/client-01.jpg" alt="" class="testimonial-avatar" loading="lazy" />
+                <img src="assets/img/client-01.jpg" alt="" class="testimonial-avatar" loading="lazy" onerror="this.style.display='none'" />
                 <div>
                   <strong>Mark Hendriks</strong>
                   <span>Directeur, Havenwerk B.V.</span>
@@ -319,7 +322,7 @@
               <svg class="testimonial-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6C4.87 8.06 3.5 10.7 3.5 13.5c0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25S9.19 16 8.5 16a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Zm9.5 0c-2.3 2.06-3.67 4.7-3.67 7.5 0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Z"/></svg>
               <p class="testimonial-text">Geen accountmanager, geen ruis, gewoon rechtstreeks contact met de persoon die ook filmt. Dat tempo en die duidelijkheid hadden we nog niet eerder meegemaakt.</p>
               <div class="testimonial-author">
-                <img src="assets/img/client-02.jpg" alt="" class="testimonial-avatar" loading="lazy" />
+                <img src="assets/img/client-02.jpg" alt="" class="testimonial-avatar" loading="lazy" onerror="this.style.display='none'" />
                 <div>
                   <strong>Sanne de Groot</strong>
                   <span>Marketing Lead, Stroom B.V.</span>
@@ -331,7 +334,7 @@
               <svg class="testimonial-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6C4.87 8.06 3.5 10.7 3.5 13.5c0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25S9.19 16 8.5 16a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Zm9.5 0c-2.3 2.06-3.67 4.7-3.67 7.5 0 2.76 2.24 5 5 5 .69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25a2.5 2.5 0 0 1-2.46-2.94c1.93-.2 3.46-1.84 3.46-3.81 0-1.93-1.57-3.5-3.5-3.5-.36 0-.61.07-.83.25Z"/></svg>
               <p class="testimonial-text">De content packages houden onze social kanalen al maanden levend zonder dat wij er zelf nog naar hoeven om te kijken. Precies de groeimotor die we zochten.</p>
               <div class="testimonial-author">
-                <img src="assets/img/client-03.jpg" alt="" class="testimonial-avatar" loading="lazy" />
+                <img src="assets/img/client-03.jpg" alt="" class="testimonial-avatar" loading="lazy" onerror="this.style.display='none'" />
                 <div>
                   <strong>Tom Visser</strong>
                   <span>Eigenaar, Kantor Groep</span>
@@ -354,17 +357,16 @@
     </section>
 
     <!-- VERTROUWEN -->
-    <section class="logos-section" aria-label="Bedrijven die met ONEMANCREW werkten">
+    <section class="logos-section" aria-label="Bedrijven die met JOUWBEDRIJFSFILM werkten">
       <div class="container">
         <p class="eyebrow center reveal" style="justify-content:center; margin-bottom:2.2rem;">Vertrouwd door groeiende bedrijven</p>
         <div class="logos-grid reveal" data-reveal-group="logos">
-          <!-- TODO: vervangen door echte klantnamen of logo's -->
-          <span class="logo-item">NOVARA</span>
-          <span class="logo-item">BRIGHTPATH</span>
-          <span class="logo-item">KANTOR&nbsp;GROEP</span>
-          <span class="logo-item">VELDIS</span>
-          <span class="logo-item">HAVENWERK</span>
-          <span class="logo-item">STROOM&nbsp;B.V.</span>
+          <span class="logo-item">RABOBANK</span>
+          <span class="logo-item">CARGILL</span>
+          <span class="logo-item">H20</span>
+          <span class="logo-item">ROOMPOT</span>
+          <span class="logo-item">KKNH</span>
+          <span class="logo-item">KOPZORG</span>
         </div>
       </div>
     </section>
@@ -388,7 +390,7 @@
       <div class="footer-brand reveal">
         <a href="index.html" class="logo">
           <img src="logo/logo.png" alt="" onerror="this.style.display='none'" />
-          ONEMANCREW
+          <span class="logo-text">JOUWBEDRIJFSFILM<span class="logo-sub">Powered by onemancrew</span></span>
         </a>
         <p>Bedrijfsfilms en content packages die het verhaal van je merk omzetten in bereik, vertrouwen en omzet.</p>
       </div>
@@ -417,7 +419,7 @@
         <h4>Contact</h4>
         <address>
           <!-- TODO: vervangen door echte contactgegevens -->
-          <a href="mailto:info@onemancrew.nl">info@onemancrew.nl</a>
+          <a href="mailto:info@jouwbedrijfsfilm.nl">info@jouwbedrijfsfilm.nl</a>
           <a href="tel:+31600000000">+31 6 00 00 00 00</a>
           <span>Nederland, op aanvraag internationaal</span>
         </address>
@@ -425,8 +427,8 @@
     </div>
 
     <div class="container footer-bottom">
-      <p>&copy; <span id="year"></span> ONEMANCREW. Alle rechten voorbehouden.</p>
-      <p>Eén persoon. Een hele crew.</p>
+      <p>&copy; <span id="year"></span> JOUWBEDRIJFSFILM. Alle rechten voorbehouden.</p>
+      <p class="footer-signature">Eén persoon. Een hele crew.</p>
     </div>
   </footer>
 
@@ -436,5 +438,6 @@
   <script src="js/interactions.js"></script>
   <script src="js/testimonials.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/timecode.js"></script>
 </body>
 </html>

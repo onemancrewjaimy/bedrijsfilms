@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — ONEMANCREW</title>
-  <meta name="description" content="Bekijk bedrijfsfilms, content packages en groeimedia gemaakt door ONEMANCREW." />
+  <title>Portfolio — JOUWBEDRIJFSFILM</title>
+  <meta name="description" content="Bekijk bedrijfsfilms, content packages en groeimedia gemaakt door JOUWBEDRIJFSFILM." />
 
-  <meta property="og:title" content="Portfolio — ONEMANCREW" />
-  <meta property="og:description" content="Recente producties van ONEMANCREW." />
+  <meta property="og:title" content="Portfolio — JOUWBEDRIJFSFILM" />
+  <meta property="og:description" content="Recente producties van JOUWBEDRIJFSFILM." />
   <meta property="og:type" content="website" />
 
   <link rel="icon" type="image/png" href="logo/logo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Mono:wght@400;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
@@ -29,9 +29,9 @@
 
   <header class="site-header" id="siteHeader">
     <div class="container nav-inner">
-      <a href="index.html" class="logo" aria-label="ONEMANCREW, terug naar home">
+      <a href="index.html" class="logo" aria-label="JOUWBEDRIJFSFILM, terug naar home">
         <img src="logo/logo.png" alt="" onerror="this.style.display='none'" />
-        ONEMANCREW
+        <span class="logo-text">JOUWBEDRIJFSFILM<span class="logo-sub">Powered by onemancrew</span></span>
       </a>
 
       <nav class="main-nav" id="mainNav" aria-label="Hoofdnavigatie">
@@ -46,6 +46,7 @@
       </nav>
 
       <div class="nav-actions">
+        <div class="rec"><span class="rec-dot"></span><span id="tc">00:00:00:00</span></div>
         <a href="contact.html" class="btn btn-accent btn-sm nav-cta">Offerte aanvragen</a>
         <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
           <span></span><span></span><span></span>
@@ -77,37 +78,37 @@
         <div class="portfolio-grid">
           <!-- TODO: vervangen door echte portfolio thumbnails en video's -->
           <div class="portfolio-card reveal" data-reveal-group="grid" data-category="bedrijfsfilm" data-lightbox-src="assets/video/work-01.mp4">
-            <img src="assets/img/work-01.jpg" alt="Bedrijfsfilm voor een logistiek bedrijf" loading="lazy" />
+            <img src="assets/img/work-01.jpg" alt="Bedrijfsfilm voor een logistiek bedrijf" loading="lazy" onerror="this.closest('.portfolio-card').classList.add('is-empty')" />
             <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
             <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Bedrijfsfilm</span><h3 style="font-size:1.1rem;">Logistiek op snelheid</h3></div>
           </div>
 
           <div class="portfolio-card reveal" data-reveal-group="grid" data-category="content-package" data-lightbox-src="assets/video/work-02.mp4">
-            <img src="assets/img/work-02.jpg" alt="Content package voor een softwarebedrijf" loading="lazy" />
+            <img src="assets/img/work-02.jpg" alt="Content package voor een softwarebedrijf" loading="lazy" onerror="this.closest('.portfolio-card').classList.add('is-empty')" />
             <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
             <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Content Package</span><h3 style="font-size:1.1rem;">Maandelijkse groei in beeld</h3></div>
           </div>
 
           <div class="portfolio-card reveal" data-reveal-group="grid" data-category="groeimedia" data-lightbox-src="assets/video/work-03.mp4">
-            <img src="assets/img/work-03.jpg" alt="Recruitmentvideo voor een productiebedrijf" loading="lazy" />
+            <img src="assets/img/work-03.jpg" alt="Recruitmentvideo voor een productiebedrijf" loading="lazy" onerror="this.closest('.portfolio-card').classList.add('is-empty')" />
             <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
             <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Recruitment</span><h3 style="font-size:1.1rem;">Nieuwe collega's vinden</h3></div>
           </div>
 
           <div class="portfolio-card reveal" data-reveal-group="grid" data-category="bedrijfsfilm" data-lightbox-src="assets/video/work-04.mp4">
-            <img src="assets/img/work-04.jpg" alt="Bedrijfsfilm voor een productiebedrijf" loading="lazy" />
+            <img src="assets/img/work-04.jpg" alt="Bedrijfsfilm voor een productiebedrijf" loading="lazy" onerror="this.closest('.portfolio-card').classList.add('is-empty')" />
             <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
             <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Bedrijfsfilm</span><h3 style="font-size:1.1rem;">Het verhaal achter het merk</h3></div>
           </div>
 
           <div class="portfolio-card reveal" data-reveal-group="grid" data-category="groeimedia" data-lightbox-src="assets/video/work-05.mp4">
-            <img src="assets/img/work-05.jpg" alt="Productvideo voor een D2C merk" loading="lazy" />
+            <img src="assets/img/work-05.jpg" alt="Productvideo voor een D2C merk" loading="lazy" onerror="this.closest('.portfolio-card').classList.add('is-empty')" />
             <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
             <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Productvideo</span><h3 style="font-size:1.1rem;">Van schap naar scherm</h3></div>
           </div>
 
           <div class="portfolio-card reveal" data-reveal-group="grid" data-category="content-package" data-lightbox-src="assets/video/work-06.mp4">
-            <img src="assets/img/work-06.jpg" alt="Social content serie voor een dienstverlener" loading="lazy" />
+            <img src="assets/img/work-06.jpg" alt="Social content serie voor een dienstverlener" loading="lazy" onerror="this.closest('.portfolio-card').classList.add('is-empty')" />
             <button class="play-btn" aria-label="Speel video af"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
             <div class="portfolio-card-overlay"><span class="portfolio-card-tag">Social Content</span><h3 style="font-size:1.1rem;">Wekelijks in beeld</h3></div>
           </div>
@@ -142,7 +143,7 @@
       <div class="footer-brand reveal">
         <a href="index.html" class="logo">
           <img src="logo/logo.png" alt="" onerror="this.style.display='none'" />
-          ONEMANCREW
+          <span class="logo-text">JOUWBEDRIJFSFILM<span class="logo-sub">Powered by onemancrew</span></span>
         </a>
         <p>Bedrijfsfilms en content packages die het verhaal van je merk omzetten in bereik, vertrouwen en omzet.</p>
       </div>
@@ -171,7 +172,7 @@
         <h4>Contact</h4>
         <address>
           <!-- TODO: vervangen door echte contactgegevens -->
-          <a href="mailto:info@onemancrew.nl">info@onemancrew.nl</a>
+          <a href="mailto:info@jouwbedrijfsfilm.nl">info@jouwbedrijfsfilm.nl</a>
           <a href="tel:+31600000000">+31 6 00 00 00 00</a>
           <span>Nederland, op aanvraag internationaal</span>
         </address>
@@ -179,8 +180,8 @@
     </div>
 
     <div class="container footer-bottom">
-      <p>&copy; <span id="year"></span> ONEMANCREW. Alle rechten voorbehouden.</p>
-      <p>Eén persoon. Een hele crew.</p>
+      <p>&copy; <span id="year"></span> JOUWBEDRIJFSFILM. Alle rechten voorbehouden.</p>
+      <p class="footer-signature">Eén persoon. Een hele crew.</p>
     </div>
   </footer>
 
@@ -189,5 +190,6 @@
   <script src="js/charts.js"></script>
   <script src="js/interactions.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/timecode.js"></script>
 </body>
 </html>

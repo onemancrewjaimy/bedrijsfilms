@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — ONEMANCREW</title>
-  <meta name="description" content="Vraag een offerte aan bij ONEMANCREW voor een bedrijfsfilm, content package of groeimedia." />
+  <title>Contact — JOUWBEDRIJFSFILM</title>
+  <meta name="description" content="Vraag een offerte aan bij JOUWBEDRIJFSFILM voor een bedrijfsfilm, content package of groeimedia." />
 
-  <meta property="og:title" content="Contact — ONEMANCREW" />
+  <meta property="og:title" content="Contact — JOUWBEDRIJFSFILM" />
   <meta property="og:description" content="Plan een gesprek en ontdek wat video kan betekenen voor de groei van je bedrijf." />
   <meta property="og:type" content="website" />
 
@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Mono:wght@400;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
@@ -29,9 +29,9 @@
 
   <header class="site-header" id="siteHeader">
     <div class="container nav-inner">
-      <a href="index.html" class="logo" aria-label="ONEMANCREW, terug naar home">
+      <a href="index.html" class="logo" aria-label="JOUWBEDRIJFSFILM, terug naar home">
         <img src="logo/logo.png" alt="" onerror="this.style.display='none'" />
-        ONEMANCREW
+        <span class="logo-text">JOUWBEDRIJFSFILM<span class="logo-sub">Powered by onemancrew</span></span>
       </a>
 
       <nav class="main-nav" id="mainNav" aria-label="Hoofdnavigatie">
@@ -46,6 +46,7 @@
       </nav>
 
       <div class="nav-actions">
+        <div class="rec"><span class="rec-dot"></span><span id="tc">00:00:00:00</span></div>
         <a href="contact.html" class="btn btn-accent btn-sm nav-cta">Offerte aanvragen</a>
         <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
           <span></span><span></span><span></span>
@@ -78,7 +79,7 @@
                 <div>
                   <strong style="color:var(--white); display:block; margin-bottom:0.2rem;">E-mail</strong>
                   <!-- TODO: vervangen door echt e-mailadres -->
-                  <a href="mailto:info@onemancrew.nl">info@onemancrew.nl</a>
+                  <a href="mailto:info@jouwbedrijfsfilm.nl">info@jouwbedrijfsfilm.nl</a>
                 </div>
               </div>
 
@@ -155,7 +156,7 @@
       <div class="footer-brand reveal">
         <a href="index.html" class="logo">
           <img src="logo/logo.png" alt="" onerror="this.style.display='none'" />
-          ONEMANCREW
+          <span class="logo-text">JOUWBEDRIJFSFILM<span class="logo-sub">Powered by onemancrew</span></span>
         </a>
         <p>Bedrijfsfilms en content packages die het verhaal van je merk omzetten in bereik, vertrouwen en omzet.</p>
       </div>
@@ -184,7 +185,7 @@
         <h4>Contact</h4>
         <address>
           <!-- TODO: vervangen door echte contactgegevens -->
-          <a href="mailto:info@onemancrew.nl">info@onemancrew.nl</a>
+          <a href="mailto:info@jouwbedrijfsfilm.nl">info@jouwbedrijfsfilm.nl</a>
           <a href="tel:+31600000000">+31 6 00 00 00 00</a>
           <span>Nederland, op aanvraag internationaal</span>
         </address>
@@ -192,8 +193,8 @@
     </div>
 
     <div class="container footer-bottom">
-      <p>&copy; <span id="year"></span> ONEMANCREW. Alle rechten voorbehouden.</p>
-      <p>Eén persoon. Een hele crew.</p>
+      <p>&copy; <span id="year"></span> JOUWBEDRIJFSFILM. Alle rechten voorbehouden.</p>
+      <p class="footer-signature">Eén persoon. Een hele crew.</p>
     </div>
   </footer>
 
@@ -202,5 +203,6 @@
   <script src="js/charts.js"></script>
   <script src="js/interactions.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/timecode.js"></script>
 </body>
 </html>

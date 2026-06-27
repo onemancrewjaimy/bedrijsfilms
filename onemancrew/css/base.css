@@ -4,6 +4,20 @@ body {
   color: var(--white);
   font-weight: 400;
   overflow-x: hidden;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  z-index: 90;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.07) 2.3px, transparent 3px);
+  background-size: 10px 22px;
 }
 
 h1,
@@ -49,6 +63,24 @@ p {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
+}
+
+.manifesto {
+  font-size: 0.95rem;
+  color: var(--grey-500);
+  max-width: 520px;
+  margin-top: 1.8rem;
+  line-height: 1.7;
+  border-top: 1px solid var(--line);
+  padding-top: 1.4rem;
+}
+
+.manifesto .sig {
+  display: block;
+  font-family: var(--font-script);
+  font-size: 1.4rem;
+  color: var(--accent-bright);
+  margin-top: 0.5rem;
 }
 
 .eyebrow::before {

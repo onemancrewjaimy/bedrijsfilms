@@ -51,6 +51,36 @@
   gap: 1.2rem;
 }
 
+.rec {
+  display: none;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--grey-500);
+  white-space: nowrap;
+}
+
+.rec-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e0433a;
+  box-shadow: 0 0 6px #e0433a;
+  animation: rec-blink 1.6s steps(1) infinite;
+}
+
+@keyframes rec-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0.25; }
+}
+
+@media (min-width: 1080px) {
+  .rec {
+    display: flex;
+  }
+}
+
 .nav-cta {
   display: none;
 }
@@ -125,6 +155,23 @@
   will-change: transform;
 }
 
+.hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 60% 25%, rgba(208, 115, 53, 0.22), transparent 55%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.6) 0 1px, transparent 1px 3px);
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -138,6 +185,25 @@
   padding-top: 6rem;
   max-width: 900px;
 }
+
+.hero-frame {
+  position: absolute;
+  inset: clamp(1.2rem, 3vw, 2.4rem);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-frame span {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.hero-frame span:nth-child(1) { top: 0; left: 0; border-right: none; border-bottom: none; }
+.hero-frame span:nth-child(2) { top: 0; right: 0; border-left: none; border-bottom: none; }
+.hero-frame span:nth-child(3) { bottom: 0; left: 0; border-right: none; border-top: none; }
+.hero-frame span:nth-child(4) { bottom: 0; right: 0; border-left: none; border-top: none; }
 
 .hero-actions {
   display: flex;
@@ -478,6 +544,44 @@
   color: var(--grey-500);
 }
 
+.footer-bottom p:first-child {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+}
+
+.footer-signature {
+  font-family: var(--font-script);
+  font-size: 1.3rem;
+  color: var(--accent-bright);
+}
+
+/* ===== Placeholder voor nog niet aangeleverd beeldmateriaal ===== */
+.portfolio-card.is-empty,
+.hero-media.is-empty {
+  background: repeating-linear-gradient(135deg, var(--bg-700) 0 18px, var(--bg-800) 18px 36px);
+}
+
+.portfolio-card.is-empty img {
+  display: none;
+}
+
+.portfolio-card.is-empty::before {
+  content: "Materiaal in ontwikkeling";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grey-500);
+}
+
 /* ===== Page hero (sub pages) ===== */
 .page-hero {
   padding: clamp(8rem, 14vw, 11rem) 0 clamp(3rem, 6vw, 5rem);
@@ -515,6 +619,7 @@
 }
 
 .service-detail-number {
+  font-family: var(--font-mono);
   font-size: 3.5rem;
   font-weight: 700;
   color: transparent;

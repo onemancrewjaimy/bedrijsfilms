@@ -26,4 +26,9 @@
   --fast: 0.2s;
   --med: 0.4s;
   --slow: 0.7s;
+
+  /* typografie — film-identiteit */
+  --font-display: "Fraunces", serif;
+  --font-mono: "Space Mono", monospace;
+  --font-script: "Caveat", cursive;
 }

@@ -14,6 +14,25 @@
   width: auto;
 }
 
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.logo-sub {
+  display: block;
+  width: 100%;
+  text-align: justify;
+  text-align-last: justify;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 3px;
+}
+
 /* ===== Nav links ===== */
 .main-nav a {
   position: relative;
@@ -159,6 +178,17 @@
 
 .card:hover::before {
   opacity: 1;
+}
+
+.card[data-idx]::after {
+  content: attr(data-idx);
+  position: absolute;
+  top: 1.4rem;
+  right: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--grey-500);
+  letter-spacing: 0.04em;
 }
 
 .card-icon {

@@ -19,6 +19,14 @@
   -webkit-backdrop-filter: blur(14px);
 }
 
+/* backdrop-filter op de header creeert een nieuw positioneringscontext
+   waarbinnen het fixed mobiele menu zich opsluit. Schakel de blur uit
+   zolang het menu open is, zodat .main-nav weer de hele viewport bedekt. */
+.site-header:has(.main-nav.is-open) {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
 .nav-inner {
   display: flex;
   align-items: center;
@@ -155,6 +163,10 @@
   will-change: transform;
 }
 
+.hero-media video {
+  opacity: 0.15;
+}
+
 .hero-media::after {
   content: "";
   position: absolute;
@@ -226,6 +238,12 @@
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .scroll-indicator {
+    display: none;
+  }
 }
 
 .scroll-indicator .line {
